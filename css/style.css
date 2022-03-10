@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(210, 253, 210);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px 0px rgb(1, 221, 210);
+    color: rgb(0, 112, 107);
+    font-family: 'Ubuntu';
+    font-size: 23px;
+    background-color: lightblue;
+    padding: 10px 0;
+}
+
+main {
+    margin-top: 20px;
+    font-family: 'Baloo 2';
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    align-self: flex-start;
+    color: grey;
+}
+main > #container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+main > #container > .title,
+main > #container > .ss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    }
+main > #container > .title {
+    font-weight: bold;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-between;
+}
+.t2 , .t3{
+    text-align: center;
+}
+
+main > #container > .ss > .subject {
+    width: 101px;
+}
+.ss > input {
+    border: none;
+    border-bottom: 3px solid grey;
+    transition: border-color 0.4s ease-in-out;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+}
+.ss > input:focus-visible {
+    outline: none;
+    border-color: green;
+}
+
+main > #container > .ss > .gotMarks {
+    width: 10%;
+}
+main > #container > .ss > .tMarks {
+    width: 10%;
+}
+
+
+
+#evaluate {
+    width: 200px;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Mochiy Pop P One';
+    color: rgb(214, 121, 0);
+    background-color: yellow;
+    border: 3px solid red;
+    border-radius: 2222px;
+
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+#evaluate:hover {
+    color: black;
+    background-color: rgb(255, 255, 79);
+    box-shadow: 0 0 15px 5px orange;
+}
+
+h3 {
+    margin-top: 30px;
+}
+#result {
+    width: 200px;
+    padding: 20px 0;
+    font-size: 18px;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:500px) {
+    
+    main > #container> .title > .title-content {
+        text-align: right;
+    }
+    nav {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+
+}
